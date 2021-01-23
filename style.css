@@ -31,6 +31,7 @@ body {
     white-space: nowrap;
     border-width: 0;
 }
+
 .container {
     width: min(90vw , 800px);
     margin: auto;
@@ -105,13 +106,21 @@ header {
     background:#2D4A22;
     padding: 2rem 0 10rem;
     text-align: center;
+  
 }
 #logo {
     color: #fff;
     font-weight: 100;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
-
-
+.img-logo{
+    height: 40px;
+    margin-left: -6px;
+    margin-right: -7px;
+}
 
 /* Balance ==================*/
 #balance {
@@ -125,6 +134,7 @@ header {
     height: 40px;
 }
 
+
 /* Cards ==================*/
 .card {
     background: #fff;
@@ -133,6 +143,7 @@ header {
     margin-bottom: 2rem;
     color: var(--dark-blue);
     transition: .2s ease-in;
+    cursor: pointer;
 }
 .card:hover {
     box-shadow: 10px 2px 10px 10px rgba(0, 0, 0, .2);
@@ -266,7 +277,7 @@ input:focus {
 
 
 /* Footer ==================*/
-footer {
+.footer {
     text-align: center;
     padding: 4rem 0 2rem;
     color: var(--dark-blue);
