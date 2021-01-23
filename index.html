@@ -4,47 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Saver | Economizador de Dinheiro</title>
+    <script type="text/javascript" src="scripts.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <header> 
-        <h1 id="logo">Money $aver</h1>     
+        <h1 id="logo">Money.$aver</h1>     
     </header>
     
     <main class="container">
         <section id="balance">
-
-            <h2>Balanço</h2>
+            
+            <h2 class="sr-only">Balanço</h2>
             
             <div class="card">
-                <h3>Entradas</h3>
+                <h3>
+                    <span>Entradas</span> 
+                    <img src="../Money-Saver/assets/up-arrow.svg" class="img-up" alt="Sinal de entrada">
+                    
+                </h3>
                 <p>R$ 5.000,00</p>
             </div>
             
             <div class="card">
-                <h3>Saídas</h3>
+                <h3>
+                    <span>Saídas</span> 
+                    <img src="../Money-Saver/assets/chevron.svg" class="img-up" alt="Sinal de saída">
+                </h3>
                 <p>R$ 2.000,00</p>
             </div>
-
+            
             <div class="card total">
-                <h3>Total</h3>
+                <h3>
+                    <span>Total</span>    
+                    <img src="../Money-Saver/assets/money.svg" class="img-up" alt="sinal de total">
+                </h3>
                 <p>R$ 3.000,00</p>
             </div>
-
+            
         </section>
         
         <section id="transaction">
-            <h2>Transações</h2>
-            
+            <h2 class="sr-only">Transações</h2>
+
+<a onclick="Modal.open()"  class="button new" ><img class="img-new" src="../Money-Saver/assets/mais.svg" alt="Nova transação">Nova transação</a>
             <table id="data-table">
                 <thead>
                     <tr> 
                         <th>Descrição</th>
                         <th>Valor</th>
                         <th>Data</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -52,16 +65,25 @@
                         <td class="description">Luz</td>
                         <td class="expense">- R$ 500,00</td>
                         <td class="date">23/01/2021</td>
+                        <td>
+                            <img  class="img-up" src="../Money-Saver/assets/menos.svg" alt="Remover transação">
+                        </td>
                     </tr>
                     <tr>
                         <td class="description">Criação de WebSite</td>
                         <td class="income">R$ 5.000,00</td>
                         <td class="date">23/01/2021</td>
+                        <td>
+                            <img  class="img-up" src="../Money-Saver/assets/menos.svg" alt="Remover transação">
+                        </td>
                     </tr>
                     <tr>
                         <td class="description">Internet</td>
                         <td class="expense">- R$ 250,00</td>
                         <td class="date">23/01/2021</td>
+                        <td>
+                            <img  class="img-up" src="../Money-Saver/assets/menos.svg" alt="Remover transação">
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -71,9 +93,37 @@
         
     </main>
     
-    
+    <div class="modal-overlay">
+        <div class="modal">
+             <div class="form">
+                 <h2>Nova transação</h2>
+                 <form>
+                    <div class="input-group">
+                        <label class="sr-only" for="descripton">Descrição</label>
+                        <input type="text" name="descripton" id="descripton" placeholder="Descrição">
+
+                    </div>
+                    <div class="input-group">
+                        <label class="sr-only" for="amount">Valor</label>
+                        <input type="number" name="amount" step="0.01" id="amount" placeholder="0,00">
+                        <small class="help">Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="date">Data</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="input-group actions">
+                        <a  onclick="Modal.close()" class="button cancel">Cancelar</a>
+
+                        <button onclick="alert()">Salvar</button>
+                    </div>
+                 </form>
+             </div>
+        </div>
+    </div>
     <footer class="">
-        <p>Money $aver</p>
+        <p>Money.$aver</p>
     </footer>
 </body>
 </html>
