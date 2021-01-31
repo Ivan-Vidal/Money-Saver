@@ -85,16 +85,16 @@ button:hover {
     background-color: var(--light-green);
 }
 .button.cancel{
-color: var(--red);
-border: 2px var(--red) solid;
-border-radius: 0.25rem;
-height: 50px;
-display: flex;
-align-items: center;
-justify-content: center;
-opacity: 0.6;
-cursor: pointer;
-transition: ease-in .2s
+    color: var(--red);
+    border: 2px var(--red) solid;
+    border-radius: 0.25rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: ease-in .2s
 }
 .button.cancel:hover {
     opacity: 1;
@@ -106,7 +106,7 @@ header {
     background:#2D4A22;
     padding: 2rem 0 10rem;
     text-align: center;
-  
+    
 }
 #logo {
     color: #fff;
@@ -239,7 +239,7 @@ table td {
     padding: 2.4rem;
     position: relative;
     z-index: 1;
-   
+    
     
 }
 /* Form ======================*/
@@ -257,14 +257,15 @@ input {
     outline: none;
 }
 input:focus {
-  border: 1px solid var(--light-green);
+    border: 1px solid var(--light-green);
 }
 .input-group {
     margin-top: .8rem;
 }
-.input-group small {
+.input-group .help {
     opacity: .4;
 }
+
 .actions {
     display: flex;
     justify-content: space-between;

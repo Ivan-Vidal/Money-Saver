@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Saver | Economizador de Dinheiro</title>
-    <script type="text/javascript" src="scripts.js"></script>
+   
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
                     <img src="./up-arrow.svg" class="img-up" alt="Sinal de entrada">
                     
                 </h3>
-                <p>R$ 5.000,00</p>
+                <p id="incomeDisplay">R$ 5.000,00</p>
             </div>
             
             <div class="card">
@@ -34,7 +34,7 @@
                     <span>Saídas</span> 
                     <img src="./chevron.svg" class="img-up" alt="Sinal de saída">
                 </h3>
-                <p> - R$ 2.000,00</p>
+                <p id="expenseDisplay"> - R$ 2.000,00</p>
             </div>
             
             <div class="card total">
@@ -42,7 +42,7 @@
                     <span>Total</span>    
                     <img src="./money.svg" class="img-up" alt="sinal de total">
                 </h3>
-                <p>R$ 3.000,00</p>
+                <p id="totalDisplay">R$ 3.000,00</p>
             </div>
             
         </section>
@@ -61,30 +61,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="description">Luz</td>
-                        <td class="expense">- R$ 500,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td>
-                            <img  class="img-up" src="./menos.svg" alt="Remover transação">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Criação de WebSite</td>
-                        <td class="income">R$ 5.000,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td>
-                            <img  class="img-up" src="./menos.svg" alt="Remover transação">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Internet</td>
-                        <td class="expense">- R$ 250,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td>
-                            <img  class="img-up" src="./menos.svg" alt="Remover transação">
-                        </td>
-                    </tr>
+                   
                 </tbody>
             </table>
             
@@ -97,10 +74,10 @@
         <div class="modal">
              <div class="form">
                  <h2>Nova transação</h2>
-                 <form>
+                 <form onsubmit="Form.submit(event)">
                     <div class="input-group">
-                        <label class="sr-only" for="descripton">Descrição</label>
-                        <input type="text" name="descripton" id="descripton" placeholder="Descrição">
+                        <label class="sr-only" for="description">Descrição</label>
+                        <input type="text" name="description" id="description" placeholder="Descrição">
 
                     </div>
                     <div class="input-group">
@@ -125,5 +102,6 @@
     <footer class="footer">
         <p> &copy 2021 - Money.$aver</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
