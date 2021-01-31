@@ -6,7 +6,7 @@
 
  O objetivo do projeto é ampliar meus conhecimentos em HTML, CSS e JS(ES20). Desenvolvendo uma aplicação para o controle de sua vida financeira ajudando muitas pessoas com dificuldade nesse quesito.
 
- **Projeto criado pela Rocketseat e ministrado pelo Mayk Brito na Maratona Discovery.** 
+ **Modelo de Projeto criado pela Rocketseat e ministrado pelo Mayk Brito na Maratona Discovery.** 
 
 
 
