@@ -22,7 +22,7 @@
 
   #### DEMO do Projeto
 
-  <a target="_blank" href="https://money-saver-sand.vercel.app/" style="color:#363f5f; text-decoration:none;">Clique aqui para ver funcionando</a>
+  <a target="_blank" href="https://money-saver-tau.vercel.app/" style="color:#363f5f; text-decoration:none;">Clique aqui para ver funcionando</a>
 
  #### Como fazer funciona na sua máquina 
  
