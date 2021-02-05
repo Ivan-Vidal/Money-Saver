@@ -255,7 +255,7 @@ table td {
     width: 20px;
 }
 .alertando {
-    background: #ffee00;
+    background: #ff0000;
     padding: 10px;
     width: 90%;
     padding-left: 20px;
@@ -267,7 +267,8 @@ table td {
     text-align: center;
     position: absolute;
     top: 30px;
-    color: rgb(0, 0, 0);
+    color: white;
+    transition: all .4s;
 }
 
 .close-btn {
