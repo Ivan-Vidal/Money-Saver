@@ -77,12 +77,12 @@
                  <form onsubmit="Form.submit(event)">
                     <div class="input-group">
                         <label class="sr-only" for="description">Descrição</label>
-                        <input type="text" name="description" id="description" placeholder="Descrição">
+                        <input type="text" name="description" id="description" maxlength="30" max="100"  placeholder="Descrição" >
 
                     </div>
                     <div class="input-group">
                         <label class="sr-only" for="amount">Valor</label>
-                        <input type="number" name="amount" step="0.01" id="amount" placeholder="0,00">
+                        <input type="number" name="amount" step="0.01" id="amount" placeholder="0,00" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==7) return false;" />
                         <small class="help">Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
                     </div>
 
@@ -98,6 +98,9 @@
                  </form>
              </div>
         </div>
+<div class="alert">
+ <p>Preencha todo formulário!  &nbsp; <a class="close-btn" onclick="fecha.closed()"> X </a></p>
+</div>
     </div>
     <footer class="footer">
         <p> &copy 2021 - Money.$aver</p>

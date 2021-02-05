@@ -111,8 +111,8 @@ const DOM = {
 const Utils = { 
     formAmount (value) {
         value = Number(value) * 100
-        console.log(Number(value))
-        return value
+        
+        return Math.round(value)
     },
     formatDate(date) {
         const splittedDate = date.split("-")
@@ -199,14 +199,14 @@ const Form = {
             
             
         } catch (error) {   
-            alert(error.message)
+           
+            document.querySelector('.alert').classList.add('alertando')
+
+           
         }
         
     }
 }
-
-
-
 
 const App = {
     init () {
@@ -221,6 +221,13 @@ const App = {
         DOM.clearTransactions()
         App.init()
     }
+}
+
+const fecha =  {
+    closed(){
+          document.querySelector('.alert').classList.remove('alertando');
+    }
+  
 }
 
 

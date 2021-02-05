@@ -239,9 +239,53 @@ table td {
     padding: 2.4rem;
     position: relative;
     z-index: 1;
+    width: 90%;
+    max-width: 400px;
     
     
 }
+
+/*  Alert ==================*/
+
+.alert{
+    display: none;
+    
+}
+.alertando {
+    background: #ff000081 ;
+    padding: 10px;
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    color: white;
+}
+.alertando p {
+    margin-right: 30px;
+}
+.close-btn {
+    background-color: white;
+    border-radius: 50%;
+    text-align: end;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close-btn:hover {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.432);
+}
+
+
 /* Form ======================*/
 .form {
     max-width: 500px;
