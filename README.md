@@ -22,7 +22,7 @@
 
   #### DEMO do Projeto
 
-  <a target="_blank" href="https://www.moneysaver.ml" style="color:#363f5f; text-decoration:none;">Clique aqui para ver funcionando</a>
+  <a target="_blank" href="https://money-saver-five.vercel.app/" style="{color:#49AA26; text-decoration:none;}">Clique aqui para ver funcionando</a>
 
  #### Como fazer funciona na sua máquina 
  
